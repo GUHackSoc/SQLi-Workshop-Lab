@@ -17,8 +17,6 @@ def login():
         conn = sqlite3.connect(DB_PATH)
         cur = conn.cursor()
 
-        # !!! INTENTIONALLY VULNERABLE FOR EDUCATIONAL DEMO !!!
-        # DO NOT USE THIS PATTERN IN PRODUCTION
         query = f"SELECT id, username FROM users WHERE username = '{username}' AND password = '{password}'"
         query_shown = query
 

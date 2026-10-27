@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3 
 import os
 
 DB_PATH = os.path.join("instance", "users.db")
