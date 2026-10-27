@@ -1,0 +1,134 @@
+:root {
+    --bg: #0f1026;
+    --card: #1d1f33;
+    --text: #f4f4f9;
+    --subtle: #b8b8d1;
+    --error: #ff5f5f;
+    --success: #3fb984;
+    --border: #2f315c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #2a2d5a, var(--bg));
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.25rem;
+}
+
+.warning {
+    color: #ffb86c;
+    margin: 0;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 40px 60px -40px rgba(63, 185, 132, 0.25);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 0.7rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: rgba(15, 16, 38, 0.8);
+    color: var(--text);
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(63, 185, 132, 0.8);
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(90deg, #3fb984, #22d3ee);
+    color: var(--bg);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.alert {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.error {
+    background: rgba(255, 95, 95, 0.15);
+    color: var(--error);
+}
+
+.success {
+    background: rgba(63, 185, 132, 0.18);
+    color: var(--success);
+}
+
+.query-box {
+    background: rgba(15, 16, 38, 0.8);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    padding: 1rem;
+}
+
+.query-box code {
+    display: block;
+    margin-top: 0.8rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--subtle);
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+code {
+    font-family: "Cascadia Code", "Fira Code", monospace;
+}
